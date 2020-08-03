@@ -5,6 +5,9 @@
         display: flex;
         position: relative;
     }
+    &__title{
+        margin-bottom: 64px
+    }
     &__description{
         width: 370px;
         max-width: 100%;

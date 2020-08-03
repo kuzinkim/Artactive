@@ -1,1 +1,1 @@
-var debugTimes=!1;$(document).ready(function(){});
+var debugTimes=!1;$(document).ready(function(){new Swiper(".swiper-container.swiper-container--service",{navigation:{nextEl:".service-button-next.swiper-button-next-custom",prevEl:".service-button-prev.swiper-button-prev-custom"}}),new Swiper(".swiper-container.swiper-container--reviews",{loop:!0,spaceBetween:25,navigation:{nextEl:".reviews-button-next.swiper-button-next-custom",prevEl:".reviews-button-prev.swiper-button-prev-custom"}})});

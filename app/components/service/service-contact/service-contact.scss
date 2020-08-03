@@ -1,0 +1,92 @@
+.service-contact{
+    background-color: #faf8fb;
+    padding: 140px 0 155px;
+    &__inner{
+        position: relative;
+    }
+    &__wrapper{
+        position: relative;
+        width: 560px;
+        max-width: 100%;
+        &::after{
+            content: '3';
+            position: absolute;
+            left: -79px;
+            bottom: 0;
+            top: -104px;
+            font-size: 200px;
+            font-weight: 900;
+            color: #faf8fb;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__description{
+        position: relative;
+        display: block;
+        z-index: 1;
+    }
+    &__text{
+        margin-bottom: 23px;
+    }
+    &__form{
+        margin-top: 120px;
+        &-wrapper{
+            margin-top: 20px;
+        }
+        &-title{
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            font-style: italic;
+            color: #383d52;
+        }
+        &-description{
+            display: block;
+            color: #383d52;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+            line-height: 30px;
+            font-size: 20px;
+        }
+    }
+    &__pic-fris{
+        position: absolute;
+        right: -100px;
+        top: -152px;
+    }
+    &__pic-arrow{
+        position: absolute;
+        right: -145px;
+        bottom: -33px;
+
+        @media screen and (max-width: 1439px){
+            right: -64px;
+            bottom: -23px;
+            width: 38%;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    align-items: flex-end;
+    &__btn{
+        border: none;
+        width: 192px;
+        max-width: 100%;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    &__input{
+        background-color: transparent;
+        border-width: 0 0 1px 0;
+        border-color: #cccccc;
+        font-style: italic;
+        padding: 0 0 12px 15px;
+        margin-right: 40px;
+        width: 243px;
+        max-width: 100%;
+    }
+}

@@ -8,5 +8,5 @@ var debugTimes = false;
  * Document Ready
  */
 $(document).ready(function () {
-    
+    @@include('../components/service/service.js')
 });

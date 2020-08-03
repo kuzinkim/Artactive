@@ -1,0 +1,25 @@
+@import '_swiper';
+
+.reviews{
+    padding-top: 128px;
+    padding-bottom: 100px;
+    &__item{
+        padding: 60px 0 60px 75px;
+        box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    &__slider{
+        width: 845px;
+        margin: 0 auto;
+        margin-top: 84px;
+    }
+    &__avatar{
+        width: 140px;
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 50%;
+    }
+}

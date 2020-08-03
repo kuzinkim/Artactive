@@ -35,6 +35,16 @@
 }
 
 @font-face {
+    font-family: 'Muller';
+    src: url('../assets/fonts/MullerHeavy.woff2') format('woff2'),
+        url('../assets/fonts/MullerHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: 'Open Sans';
     src: url('../assets/fonts/OpenSans-Bold.woff2') format('woff2'),
         url('../assets/fonts/OpenSans-Bold.woff') format('woff');
