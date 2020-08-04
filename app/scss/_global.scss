@@ -53,6 +53,7 @@ img{
     padding: 0 20px;
     @include media-breakpoint-down(tablet) {
         margin: 0 14px;
+        padding: 0 15px;
         width: auto;
     }
     @include media-breakpoint-down(mobile) {
@@ -70,6 +71,9 @@ img{
     z-index: -1;
     &--1{
         left: -22px;
+        @include media-breakpoint-down(tablet) {
+            left: -15px;
+        }
     }
     &--2{
         left: 270px;
@@ -83,6 +87,9 @@ img{
     }
     &--5{
         right: -19px;
+        @include media-breakpoint-down(tablet) {
+            right: -15px;
+        }
     }
 }
 

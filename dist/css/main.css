@@ -216,6 +216,7 @@ img {
   @media (max-width: 1279px) {
     .container {
       margin: 0 14px;
+      padding: 0 15px;
       width: auto; } }
   @media (max-width: 767px) {
     .container {
@@ -231,6 +232,9 @@ img {
   z-index: -1; }
   .grid-line--1 {
     left: -22px; }
+    @media (max-width: 1279px) {
+      .grid-line--1 {
+        left: -15px; } }
   .grid-line--2 {
     left: 270px; }
   .grid-line--3 {
@@ -242,6 +246,9 @@ img {
     right: 274px; }
   .grid-line--5 {
     right: -19px; }
+    @media (max-width: 1279px) {
+      .grid-line--5 {
+        right: -15px; } }
 
 /**
  * Elements
@@ -424,12 +431,12 @@ img {
     margin-right: 88px; }
     @media (max-width: 1279px) {
       .main__pic {
-        min-width: 535px;
+        min-width: 515px;
         width: 100%;
         -webkit-flex-shrink: unset;
             -ms-flex-negative: unset;
                 flex-shrink: unset;
-        margin-right: 0; } }
+        margin-right: 20px; } }
   .main__text {
     display: inline-block;
     width: 46%;
@@ -496,6 +503,13 @@ img {
     display: -ms-flexbox;
     display: flex;
     position: relative; }
+    @media (max-width: 1279px) {
+      .about__inner {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .about__title {
     margin-bottom: 64px; }
   .about__description {
@@ -536,38 +550,80 @@ img {
       position: absolute;
       right: 246px;
       top: 0; }
+      @media (max-width: 1279px) {
+        .about-service__item--book {
+          right: auto;
+          left: 162px;
+          top: 38px; } }
     .about-service__item--comp {
       position: absolute;
       right: 37px;
       top: 139px; }
+      @media (max-width: 1279px) {
+        .about-service__item--comp {
+          right: 0; } }
     .about-service__item--writer {
       position: absolute;
       bottom: 187px;
       left: -10px; }
+      @media (max-width: 1279px) {
+        .about-service__item--writer {
+          bottom: 58px;
+          left: 0px; } }
     .about-service__item--moving {
       position: absolute;
       bottom: 55px;
       right: 210px; }
+      @media (max-width: 1279px) {
+        .about-service__item--moving {
+          bottom: -35px;
+          right: 178px; } }
   .about__column {
     width: 50%;
     position: relative; }
     .about__column--right {
       padding-left: 50px; }
+      @media (max-width: 1279px) {
+        .about__column--right {
+          -webkit-box-ordinal-group: 0;
+          -webkit-order: -1;
+              -ms-flex-order: -1;
+                  order: -1;
+          padding-left: 0;
+          width: 100%; } }
     .about__column--service {
       background-repeat: no-repeat;
       background-position: 42% 23%;
-      background-size: 56%; }
+      background-size: 56%;
+      background-image: url("../assets/images/about/arrow-line.png"); }
+      @media (max-width: 1279px) {
+        .about__column--service {
+          width: 100%;
+          height: 454px;
+          background-image: url("../assets/images/about/arrow-line-tablet.png");
+          background-position: center center;
+          background-size: 484px;
+          max-width: 710px;
+          margin: 0 auto; } }
   .about-arrow {
     position: absolute; }
     .about-arrow--comp {
       left: 48px;
       top: -8px; }
+      @media (max-width: 1279px) {
+        .about-arrow--comp {
+          left: 23px;
+          top: 20px; } }
     .about-arrow--writer {
       top: -1px;
       left: 114px; }
     .about-arrow--moving {
       top: -9px;
       left: 45px; }
+      @media (max-width: 1279px) {
+        .about-arrow--moving {
+          top: 28px;
+          left: 17px; } }
 
 .service .swiper-container {
   height: 100%;

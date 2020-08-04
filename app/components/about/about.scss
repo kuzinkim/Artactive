@@ -4,6 +4,10 @@
     &__inner{
         display: flex;
         position: relative;
+        
+        @include media-breakpoint-down(tablet) {
+            flex-direction: column;
+        }
     }
     &__title{
         margin-bottom: 64px
@@ -51,21 +55,38 @@
                 position: absolute;
                 right: 246px;
                 top: 0;
+
+                @include media-breakpoint-down(tablet) {
+                    right: auto;
+                    left: 162px;
+                    top: 38px;
+                }
             }
             &--comp{
                 position: absolute;
                 right: 37px;
                 top: 139px;
+                @include media-breakpoint-down(tablet) {
+                    right: 0;
+                }
             }
             &--writer{
                 position: absolute;
                 bottom: 187px;
                 left: -10px;
+                @include media-breakpoint-down(tablet) {
+                    bottom: 58px;
+                    left: 0px;
+                }
             }
             &--moving{
                 position: absolute;
                 bottom: 55px;
                 right: 210px;
+                @include media-breakpoint-down(tablet) {
+                    bottom: -35px;
+                    right: 178px;
+                }
             }
         }
     }
@@ -74,11 +95,28 @@
         position: relative;
         &--right{
             padding-left: 50px;
+
+            @include media-breakpoint-down(tablet) {
+                order: -1;
+                padding-left: 0;
+                width: 100%;
+            }
         }
         &--service{
             background-repeat: no-repeat;
             background-position: 42% 23%;
             background-size: 56%;
+            background-image: url('../assets/images/about/arrow-line.png');
+
+            @include media-breakpoint-down(tablet) {
+                width: 100%;
+                height: 454px;
+                background-image: url('../assets/images/about/arrow-line-tablet.png');
+                background-position: center center;
+                background-size: 484px;
+                max-width: 710px;
+                margin: 0 auto;
+            }
         }
     }
     &-arrow{
@@ -86,6 +124,11 @@
         &--comp{
             left: 48px;
             top: -8px;
+
+            @include media-breakpoint-down(tablet) {
+                left: 23px;
+                top: 20px;
+            }
         }
         &--writer{
             top: -1px;
@@ -93,7 +136,12 @@
         }
         &--moving{
             top: -9px;
-            left: 45px;
+            left: 45px;    
+
+            @include media-breakpoint-down(tablet) {
+                top: 28px;
+                left: 17px;
+            }
         }
     }
 }

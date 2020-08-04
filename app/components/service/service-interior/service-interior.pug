@@ -8,8 +8,11 @@
             .service-interior__pic
                 .service-interior__pic-divan 
                     img(src="assets/images/divan.png", alt="")
-                .service-interior__pic-flow 
-                    img(src="assets/images/flow.png", alt="")
+                .service-interior__pic-flow
+                    <picture>
+                        <source media="(max-width: 1279px)" srcset="assets/images/flow-tablet.png">
+                        <img src="assets/images/flow.png" alt="">
+                    </picture>
             .grid-line.grid-line--1
             .grid-line.grid-line--2
             .grid-line.grid-line--3
