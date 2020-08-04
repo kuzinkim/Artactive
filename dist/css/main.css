@@ -215,7 +215,7 @@ img {
   padding: 0 20px; }
   @media (max-width: 1279px) {
     .container {
-      margin: 0 30px;
+      margin: 0 14px;
       width: auto; } }
   @media (max-width: 767px) {
     .container {
@@ -289,6 +289,9 @@ img {
   padding-top: 60px;
   font-family: "Open Sans", sans-serif;
   z-index: 1; }
+  @media (max-width: 1279px) {
+    .header {
+      padding-top: 30px; } }
   .header__inner {
     display: -webkit-box;
     display: -webkit-flex;
@@ -311,6 +314,25 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 1279px) {
+      .header__menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+                transform: translateX(-100%);
+        -webkit-transition: -webkit-transform 0.5s ease;
+        transition: -webkit-transform 0.5s ease;
+        -o-transition: transform 0.5s ease;
+        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+        background-color: #fb0275;
+        display: block; } }
   .header__logo {
     font-weight: 800;
     text-transform: uppercase;
@@ -318,18 +340,32 @@ img {
 
 .nav {
   margin-right: 65px; }
+  @media (max-width: 1279px) {
+    .nav {
+      margin-right: 0; } }
   .nav__item {
     display: inline-block;
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase; }
+    @media (max-width: 1279px) {
+      .nav__item {
+        display: block;
+        margin-bottom: 15px; } }
     .nav__item:not(:last-child) {
       margin-right: 56px; }
+      @media (max-width: 1279px) {
+        .nav__item:not(:last-child) {
+          margin-right: 0; } }
 
 .contact__phone {
   margin-right: 35px;
   display: inline-block;
   font-weight: bold; }
+  @media (max-width: 1279px) {
+    .contact__phone {
+      display: block;
+      margin-bottom: 15px; } }
 
 .contact__button {
   display: inline-block;
@@ -349,30 +385,65 @@ img {
   color: #fff;
   position: relative;
   z-index: 0; }
+  @media (max-width: 1279px) {
+    .main {
+      height: auto;
+      padding: 60px 0 40px 0; } }
   .main__title {
     text-transform: uppercase;
     font-size: 60px;
     font-weight: 800; }
+    @media (max-width: 1279px) {
+      .main__title {
+        font-size: 45px; } }
   .main__description {
     font-size: 32px;
     margin: 39px 0 70px; }
+    @media (max-width: 1279px) {
+      .main__description {
+        font-size: 21px;
+        margin: 29px 0 40px; } }
   .main__inner {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 1279px) {
+      .main__inner {
+        padding-bottom: 50px;
+        position: relative;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .main__pic {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
     margin-left: -114px;
     margin-right: 88px; }
+    @media (max-width: 1279px) {
+      .main__pic {
+        min-width: 535px;
+        width: 100%;
+        -webkit-flex-shrink: unset;
+            -ms-flex-negative: unset;
+                flex-shrink: unset;
+        margin-right: 0; } }
   .main__text {
     display: inline-block;
-    width: 46%; }
+    width: 46%;
+    font-family: 'Open Sans', sans-serif; }
+    @media (max-width: 1279px) {
+      .main__text {
+        width: 100%; } }
   .main__btn {
     width: 250px;
     margin-right: 26px; }
+    @media (max-width: 1279px) {
+      .main__btn {
+        margin-right: 0;
+        margin-bottom: 30px; } }
   .main__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -382,8 +453,15 @@ img {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 1279px) {
+      .main__row {
+        display: block; } }
   .main__wrapper {
     margin-top: 40px; }
+    @media (max-width: 1279px) {
+      .main__wrapper {
+        width: 100%;
+        margin-top: 0; } }
   .main .mouse-icon {
     width: 18px;
     height: 30px;
@@ -395,6 +473,9 @@ img {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
+    @media (max-width: 1279px) {
+      .main .mouse-icon {
+        bottom: 40px; } }
   .main .mouse-wheel {
     width: 2px;
     height: 6px;

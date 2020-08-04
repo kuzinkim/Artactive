@@ -52,7 +52,7 @@ img{
     max-width: 100%;
     padding: 0 20px;
     @include media-breakpoint-down(tablet) {
-        margin: 0 30px;
+        margin: 0 14px;
         width: auto;
     }
     @include media-breakpoint-down(mobile) {
