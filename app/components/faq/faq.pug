@@ -1,0 +1,37 @@
+.faq
+    .container
+        .faq__title.title 4. Частые вопросы (FAQ)
+        .faq__inner
+            .faq__item
+                span.faq__subtitle Что такое макет?
+                span.faq__text.text Макет — это будущее печатное изделие в электронном формате. Верстают (собирают) макет в специализированном программном обеспечении. 
+            .faq__item 
+                span.faq__subtitle У меня есть готовый макет
+                span.faq__text.text Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.
+            .faq__item
+                span.faq__subtitle У меня нет макета
+                span.faq__text.text В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.
+            .faq__item
+                span.faq__subtitle Сколько времени занимает печать?
+                span.faq__text.text В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время изготовления зависит от нашей загруженности.
+            .faq__item
+                span.faq__subtitle Я не могу приехать к вам в офис
+                span.faq__text.text Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.
+            .faq__item
+                span.faq__subtitle Вызов курьера бесплатный?
+                span.faq__text.text В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.
+        .faq__form-wrapper
+            .faq__form-text
+                span.faq__form-title Остались вопросы?
+                span.faq__form-description Оставьте заявку на консультацию
+            form.faq__form.form(action="#")
+                .form__field
+                    input.form__input(type="text" name="name" placeholder="Имя" required)
+                .form__field
+                    input.form__input(type="text" name="phone" placeholder="Телефон" required)
+                .form__field
+                    input.form__btn.btn(type="submit", name="submit" value="Отправить")
+            .faq__form-circle
+                img(src="assets/images/circle.png", alt="")
+            .faq__form-quest
+                img(src="assets/images/quest.png", alt="")

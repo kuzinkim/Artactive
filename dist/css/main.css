@@ -900,3 +900,80 @@ img {
     line-height: 30px; }
     .profile__link:hover {
       text-decoration: underline; }
+
+.faq {
+  padding-top: 26px;
+  padding-bottom: 145px; }
+  .faq__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    margin-bottom: 20px;
+    color: #383d52; }
+  .faq__inner {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+    margin-top: 63px;
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px; }
+  .faq__item {
+    margin-bottom: 40px; }
+  .faq__form-wrapper {
+    margin-top: 30px;
+    background-color: #883eca;
+    padding: 45px 70px 55px 309px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    -webkit-box-shadow: 0px 11px 26px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 11px 26px 0px rgba(0, 0, 0, 0.5); }
+    .faq__form-wrapper .form__input {
+      border-color: #fff;
+      color: #fff; }
+      .faq__form-wrapper .form__input::-webkit-input-placeholder {
+        color: #fff; }
+      .faq__form-wrapper .form__input::-moz-placeholder {
+        color: #fff; }
+      .faq__form-wrapper .form__input:-ms-input-placeholder {
+        color: #fff; }
+      .faq__form-wrapper .form__input::-ms-input-placeholder {
+        color: #fff; }
+      .faq__form-wrapper .form__input::placeholder {
+        color: #fff; }
+  .faq__form {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 10; }
+    .faq__form-circle {
+      position: absolute;
+      right: -360px;
+      top: -15px; }
+    .faq__form-text {
+      position: relative;
+      z-index: 10; }
+    .faq__form-title {
+      display: block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      font-style: italic;
+      color: #ffffff; }
+    .faq__form-description {
+      display: block;
+      color: #ffffff;
+      font-weight: 600;
+      font-family: "Open Sans", sans-serif;
+      line-height: 30px;
+      font-size: 20px; }
+    .faq__form-quest {
+      position: absolute;
+      left: 30px;
+      top: 0; }

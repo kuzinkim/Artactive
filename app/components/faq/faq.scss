@@ -1,0 +1,73 @@
+.faq{
+    padding-top: 26px;
+    padding-bottom: 145px;
+    &__subtitle{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+        display: block;
+        margin-bottom: 20px;
+        color: #383d52;
+    }
+    &__inner{
+        columns: 2;
+        margin-top: 63px;
+        column-gap: 80px;
+    }
+    &__item{
+        margin-bottom: 40px;
+    }
+    &__form-wrapper{
+        margin-top: 30px;
+        background-color: #883eca;
+        padding: 45px 70px 55px 309px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        box-shadow: 0px 11px 26px 0px rgba(0, 0, 0, 0.5);
+        .form__input{
+            border-color: #fff;
+            color: #fff;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+    }
+    &__form{
+        justify-content: space-between;
+        position: relative;
+        z-index: 10;
+        &-circle{
+            position: absolute;
+            right: -360px;
+            top: -15px;
+        }
+        &-text{
+            position: relative;
+            z-index: 10;
+        }
+        &-title{
+            display: block;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+            font-style: italic;
+            color: #ffffff;
+        }
+        &-description{
+            display: block;
+            color: #ffffff;
+            font-weight: 600;
+            font-family: "Open Sans", sans-serif;
+            line-height: 30px;
+            font-size: 20px;
+        }
+        &-quest{
+            position: absolute;
+            left: 30px;
+            top: 0;
+        }
+    }
+}
