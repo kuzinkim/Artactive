@@ -9,4 +9,5 @@ var debugTimes = false;
  */
 $(document).ready(function () {
     @@include('../components/service/service.js')
+    @@include('../components/contact/map.js')
 });
