@@ -21,6 +21,7 @@ body {
     font-family: 'Muller', sans-serif;
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
     &.is-hidden{
         overflow: hidden;
     }

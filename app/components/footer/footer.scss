@@ -1,0 +1,20 @@
+.footer{
+    background-color: #65269d;
+    padding: 18px 0;
+    &__text{
+        font-size: 13px;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        opacity: 0.7;
+        &--link{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+}

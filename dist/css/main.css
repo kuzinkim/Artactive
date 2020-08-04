@@ -182,7 +182,11 @@ body {
   color: #000;
   font-family: 'Muller', sans-serif;
   -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   html.is-hidden,
   body.is-hidden {
     overflow: hidden; }
@@ -1019,3 +1023,27 @@ img {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
       color: #5e606a; }
+      .contact-section__info-text--link:hover {
+        text-decoration: underline; }
+
+.footer {
+  background-color: #65269d;
+  padding: 18px 0; }
+  .footer__text {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    opacity: 0.7; }
+    .footer__text--link {
+      text-decoration: underline; }
+      .footer__text--link:hover {
+        text-decoration: none; }
+  .footer__inner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }

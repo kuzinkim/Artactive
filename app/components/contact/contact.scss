@@ -36,7 +36,12 @@
         &-text{
             font-size: 14px;
             font-family: "Open Sans", sans-serif;
-            color: #5e606a
+            color: #5e606a;
+            &--link{
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

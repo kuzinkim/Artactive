@@ -15,8 +15,8 @@ function init () {
     }, {
         iconLayout: 'default#image',
         iconImageHref: 'assets/images/pin.png',
-        iconImageSize: [30, 42],
-        iconImageOffset: [-5, -38]
+        iconImageSize: [25, 38],
+        iconImageOffset: [-17, -38]
     });
 
     myMap.geoObjects.add(myPlacemark)
