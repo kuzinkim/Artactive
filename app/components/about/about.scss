@@ -1,6 +1,10 @@
 .about{
     padding-top: 114px;
     padding-bottom: 145px;
+
+    @include media-breakpoint-down(tablet) {
+        padding-top: 56px;
+    }
     &__inner{
         display: flex;
         position: relative;
@@ -10,12 +14,21 @@
         }
     }
     &__title{
-        margin-bottom: 64px
+        margin-bottom: 64px;
+
+        @include media-breakpoint-down(tablet) {
+            margin-bottom: 39px;
+        }
     }
     &__description{
         width: 370px;
         max-width: 100%;
         display: block;
+
+        @include media-breakpoint-down(tablet) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
     &__text{
         margin-bottom: 30px;

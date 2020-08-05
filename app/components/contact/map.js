@@ -21,4 +21,5 @@ function init () {
 
     myMap.geoObjects.add(myPlacemark)
     myMap.behaviors.disable('scrollZoom');
+    myMap.setCenter([57.65720407856503,39.84120518515008]);
 }

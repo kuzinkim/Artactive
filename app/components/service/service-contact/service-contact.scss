@@ -1,13 +1,26 @@
 .service-contact{
     background-color: #faf8fb;
     padding: 140px 0 155px;
+
+    @include media-breakpoint-down(tablet) {
+        position: relative;
+    }
     &__inner{
         position: relative;
+
+        @include media-breakpoint-down(tablet) {
+            position: static;
+        }
     }
     &__wrapper{
         position: relative;
         width: 560px;
         max-width: 100%;
+
+        @include media-breakpoint-down(tablet) {
+            width: 100%;
+            padding-right: 80px;
+        }
         &::after{
             content: '3';
             position: absolute;
@@ -18,20 +31,64 @@
             font-weight: 900;
             color: #faf8fb;
             text-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+            @include media-breakpoint-down(tablet) {
+                left: 45px;
+            }
         }
     }
     &__description{
         position: relative;
         display: block;
         z-index: 1;
+
+        @include media-breakpoint-down(tablet) {
+            width: 500px;
+            max-width: 100%;
+        }
     }
     &__text{
         margin-bottom: 23px;
     }
     &__form{
         margin-top: 120px;
+
+        @include media-breakpoint-down(tablet) {
+            margin-top: 80px;
+        }
         &-wrapper{
             margin-top: 20px;
+
+            @include media-breakpoint-down(tablet) {
+                width: 34%;
+            }
+            .form{
+                @include media-breakpoint-down(tablet) {
+                    display: block;
+                }
+                &__field{
+                    &:not(:last-child){
+                        @include media-breakpoint-down(tablet) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    &:nth-child(2){
+                        @include media-breakpoint-down(tablet) {
+                            margin-bottom: 30px;
+                        }
+                    } 
+                }
+                &__btn{
+                    @include media-breakpoint-down(tablet) {
+                        width: 100%;
+                    }
+                }
+                &__input{
+                    @include media-breakpoint-down(tablet) {
+                        width: 100%;
+                    }
+                }
+            }
         }
         &-title{
             display: block;
@@ -48,12 +105,23 @@
             font-family: "Open Sans", sans-serif;
             line-height: 30px;
             font-size: 20px;
+
+            @include media-breakpoint-down(tablet) {
+                width: 200px;
+            }
         }
     }
     &__pic-fris{
         position: absolute;
         right: -100px;
         top: -152px;
+
+        @include media-breakpoint-down(tablet) {
+            right: -87px;
+            top: auto;
+            bottom: 110px;
+            width: 450px;
+        }
     }
     &__pic-arrow{
         position: absolute;
@@ -64,6 +132,12 @@
             right: -64px;
             bottom: -23px;
             width: 38%;
+        }
+
+        @include media-breakpoint-down(tablet) {
+            right: auto;
+            bottom: 174px;
+            left: 35%;
         }
     }
 }

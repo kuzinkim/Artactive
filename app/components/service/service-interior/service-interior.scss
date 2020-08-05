@@ -1,8 +1,16 @@
 .service-interior{
     padding-top: 120px;
     padding-bottom: 80px;
+
+    @include media-breakpoint-down(tablet) {
+        position: relative;
+        padding-bottom: 352px;
+    }
     &__inner{
         position: relative;
+        @include media-breakpoint-down(tablet) {
+            position: static;
+        }
         .grid-line{
             top: -120px;
             height: 150%;
@@ -14,6 +22,12 @@
         max-width: 100%;
         margin-left: auto;
         z-index: 20;
+
+        @include media-breakpoint-down(tablet) {
+            margin-left: 0;
+            width: 100%;
+            padding-right: 165px;
+        }
         &::after{
             content: '2';
             position: absolute;
@@ -24,12 +38,20 @@
             font-weight: 900;
             color: #fff;
             text-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+
+            @include media-breakpoint-down(tablet) {
+                left: 45px;
+            }
         }
     }
     &__description{
         position: relative;
         display: block;
         z-index: 1;
+
+        @include media-breakpoint-down(tablet) {
+            max-width: 500px;
+        }
     }
     &__btn{
         width: 243px;
@@ -41,14 +63,33 @@
         position: relative;
         left: -144px;
         margin-top: 53px;
+
+        @include media-breakpoint-down(tablet) {
+            position: absolute;
+            left: auto;
+            margin-top: 0;
+            width: 996px;
+            right: -370px;
+            bottom: 0;
+        }
         &-flow{
             position: absolute;
             top: -406px;
             left: -102px;
+
+            @include media-breakpoint-down(tablet) {
+                position: absolute;
+                top: -316px;
+                left: 481px;
+            }
         }
         &-divan{
             position: relative;
             z-index: 20;
+
+            @include media-breakpoint-down(tablet) {
+                width: 100%;
+            }
         }
     }
 }

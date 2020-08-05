@@ -1,6 +1,11 @@
 .faq{
     padding-top: 26px;
     padding-bottom: 145px;
+
+    @include media-breakpoint-down(tablet) {
+        padding-top: 88px;
+        padding-bottom: 100px;
+    }
     &__subtitle{
         font-size: 20px;
         line-height: 30px;
@@ -14,6 +19,10 @@
         columns: 2;
         margin-top: 63px;
         column-gap: 80px;
+
+        @include media-breakpoint-down(tablet) {
+            columns: auto;
+        }
     }
     &__item{
         margin-bottom: 40px;
@@ -27,11 +36,26 @@
         overflow: hidden;
         color: #fff;
         box-shadow: 0px 11px 26px 0px rgba(0, 0, 0, 0.5);
+
+        @include media-breakpoint-down(tablet) {
+            padding: 45px 30px 50px 36px;
+        }
         .form__input{
             border-color: #fff;
             color: #fff;
             &::placeholder{
                 color: #fff;
+            }
+            @include media-breakpoint-down(tablet) {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+        .form__field{
+            @include media-breakpoint-down(tablet) {
+                &:not(:last-child){
+                    width: 33%
+                }
             }
         }
     }
@@ -43,6 +67,11 @@
             position: absolute;
             right: -360px;
             top: -15px;
+
+            @include media-breakpoint-down(tablet) {
+                right: -819px;
+                top: -5px;
+            }
         }
         &-text{
             position: relative;
@@ -68,6 +97,12 @@
             position: absolute;
             left: 30px;
             top: 0;
+
+            @include media-breakpoint-down(tablet) {
+                left: auto;
+                top: -60px;
+                right: -26px;
+            }
         }
     }
 }
