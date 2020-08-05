@@ -220,7 +220,8 @@ img {
       width: auto; } }
   @media (max-width: 767px) {
     .container {
-      margin: 0 20px; } }
+      margin: 0 15px;
+      padding: 0; } }
 
 /**
  * Elements
@@ -236,6 +237,9 @@ img {
   color: #383d52;
   margin-bottom: 55px;
   display: block; }
+  @media (max-width: 1279px) {
+    .description {
+      font-size: 24px; } }
 
 .text {
   font-family: "Open Sans", sans-serif;
@@ -368,6 +372,9 @@ img {
     .main {
       height: auto;
       padding: 60px 0 40px 0; } }
+  @media (max-width: 767px) {
+    .main {
+      padding: 60px 0 60px 0; } }
   .main__title {
     text-transform: uppercase;
     font-size: 60px;
@@ -375,6 +382,11 @@ img {
     @media (max-width: 1279px) {
       .main__title {
         font-size: 45px; } }
+    @media (max-width: 767px) {
+      .main__title {
+        font-size: 36px; }
+        .main__title br {
+          display: none; } }
   .main__description {
     font-size: 32px;
     margin: 39px 0 70px; }
@@ -395,6 +407,10 @@ img {
         -webkit-align-items: center;
             -ms-flex-align: center;
                 align-items: center; } }
+    @media (max-width: 767px) {
+      .main__inner {
+        display: block;
+        padding-bottom: 0; } }
   .main__pic {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -409,6 +425,13 @@ img {
             -ms-flex-negative: unset;
                 flex-shrink: unset;
         margin-right: 20px; } }
+    @media (max-width: 767px) {
+      .main__pic {
+        position: relative;
+        left: -30px;
+        margin: 0 -30px 50px -30px;
+        min-width: auto;
+        width: auto; } }
   .main__text {
     display: inline-block;
     width: 46%;
@@ -423,6 +446,10 @@ img {
       .main__btn {
         margin-right: 0;
         margin-bottom: 30px; } }
+    @media (max-width: 767px) {
+      .main__btn {
+        width: 290px;
+        max-width: 100%; } }
   .main__row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -455,6 +482,9 @@ img {
     @media (max-width: 1279px) {
       .main .mouse-icon {
         bottom: 40px; } }
+    @media (max-width: 767px) {
+      .main .mouse-icon {
+        display: none; } }
   .main .mouse-wheel {
     width: 2px;
     height: 6px;
