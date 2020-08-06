@@ -6,6 +6,14 @@
         position: relative;
         padding-bottom: 352px;
     }
+
+    @include media-breakpoint-down(mobile) {
+        padding-top: 100px;
+    }
+
+    @include media-breakpoint-down(mobile) {
+        padding-bottom: 257px;
+    }
     &__inner{
         position: relative;
         @include media-breakpoint-down(tablet) {
@@ -27,6 +35,10 @@
             margin-left: 0;
             width: 100%;
             padding-right: 165px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            padding-right: 0;
         }
         &::after{
             content: '2';
@@ -58,6 +70,10 @@
         max-width: 100%;
         display: block;
         margin-top: 60px;
+
+        @include media-breakpoint-down(mobile) {
+            width: 294px;
+        }
     }
     &__pic{
         position: relative;
@@ -72,6 +88,12 @@
             right: -370px;
             bottom: 0;
         }
+
+        @include media-breakpoint-down(mobile) {
+            width: 506px;
+            right: -180px;
+            bottom: 60px;
+        }
         &-flow{
             position: absolute;
             top: -406px;
@@ -81,6 +103,12 @@
                 position: absolute;
                 top: -316px;
                 left: 481px;
+            }
+
+            @include media-breakpoint-down(mobile) {
+                top: -226px;
+                left: 250px;
+                width: 20%;
             }
         }
         &-divan{

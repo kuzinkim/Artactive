@@ -1,6 +1,11 @@
 .contact-section{
     padding-top: 120px;
     padding-bottom: 150px;
+
+    @include media-breakpoint-down(mobile) {
+        padding-top: 60px;
+        padding-bottom: 200px;
+    }
     position: relative;
     &__map{
         position: absolute;
@@ -22,12 +27,21 @@
             width: 388px;
             padding: 60px 0 68px 57px;
         }
+
+        @include media-breakpoint-down(mobile) {
+            width: 100%;
+            padding: 30px 31px 30px 36px;
+        }
     }
     &__info{
         margin-top: 62px;
 
         @include media-breakpoint-down(tablet) {
             margin-top: 57px;
+        }
+
+        @include media-breakpoint-down(mobile) {
+            margin-top: 20px;
         }
         &-item{
             display: flex;

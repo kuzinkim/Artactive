@@ -12,9 +12,20 @@
                 text-decoration: none;
             }
         }
+
+        @include media-breakpoint-down(mobile) {
+            display: block;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
     }
     &__inner{
         display: flex;
         justify-content: space-between;
+
+        @include media-breakpoint-down(mobile) {
+            display: block;
+        }
     }
 }

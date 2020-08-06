@@ -6,7 +6,28 @@
     @media (max-width: 1023px) {
         height: 462px;
     }
+
+    @include media-breakpoint-down(mobile) {
+        height: auto;
+        &::after{
+            content: '';
+            padding-top: 65%;
+            display: block;
+        }
+    }
 }
+
+.service .swiper-wrapper{
+
+    @include media-breakpoint-down(mobile) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
 .service .swiper-slide{
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +38,11 @@
     display: flex;
     margin-top: 50px;
     padding-left: 12px;
+
+    @include media-breakpoint-down(mobile) {
+        justify-content: center;
+        padding-left: 0;
+    }
 }
 
 .swiper-button-next-custom,

@@ -5,6 +5,10 @@
     @include media-breakpoint-down(tablet) {
         padding-top: 56px;
     }
+
+    @include media-breakpoint-down(mobile) {
+        padding-bottom: 40px;
+    }
     &__inner{
         display: flex;
         position: relative;
@@ -37,6 +41,12 @@
         &__item{
             display: inline-block;
             text-align: center;
+
+            @include media-breakpoint-down(mobile) {
+                display: flex;
+                align-items: center;
+                text-align: left;
+            }
             &-wrap{
                 width: 106px;
                 height: 106px;
@@ -44,6 +54,11 @@
                 background-color: #f0e2ff;
                 position: relative;
                 margin: 0 auto 15px;
+
+                @include media-breakpoint-down(mobile) {
+                    margin: 0 15px 15px 0;
+                    flex-shrink: 0;
+                }
             }
             &-icon{
                 width: 55px;
@@ -63,6 +78,10 @@
                 line-height: 18px;
                 color: #5e606a;
                 font-family: "Open Sans", sans-serif;
+
+                @include media-breakpoint-down(mobile) {
+                    width: 100%;
+                }
             }
             &--book{
                 position: absolute;
@@ -74,6 +93,10 @@
                     left: 162px;
                     top: 38px;
                 }
+
+                @include media-breakpoint-down(mobile) {
+                    position: static;
+                }
             }
             &--comp{
                 position: absolute;
@@ -81,6 +104,10 @@
                 top: 139px;
                 @include media-breakpoint-down(tablet) {
                     right: 0;
+                }
+
+                @include media-breakpoint-down(mobile) {
+                    position: static;
                 }
             }
             &--writer{
@@ -91,6 +118,10 @@
                     bottom: 58px;
                     left: 0px;
                 }
+
+                @include media-breakpoint-down(mobile) {
+                    position: static;
+                }
             }
             &--moving{
                 position: absolute;
@@ -99,6 +130,10 @@
                 @include media-breakpoint-down(tablet) {
                     bottom: -35px;
                     right: 178px;
+                }
+
+                @include media-breakpoint-down(mobile) {
+                    position: static;
                 }
             }
         }
@@ -130,10 +165,19 @@
                 max-width: 710px;
                 margin: 0 auto;
             }
+
+            @include media-breakpoint-down(mobile) {
+                background-image: none;
+                height: auto;
+            }
         }
     }
     &-arrow{
         position: absolute;
+
+        @include media-breakpoint-down(mobile) {
+            display: none;
+        }
         &--comp{
             left: 48px;
             top: -8px;
